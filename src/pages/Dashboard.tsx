@@ -2,21 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { BarChart3, Database, Settings2, TrendingUp, Activity, PackageSearch, AlertCircle } from "lucide-react"
+import { TrendingUp, PackageSearch, AlertCircle } from "lucide-react"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import axios from 'axios'
 import { useState, FormEvent } from 'react'
-
-// Sample data for the chart
-const data = [
-  { name: "Jan", value: 400 },
-  { name: "Feb", value: 300 },
-  { name: "Mar", value: 600 },
-  { name: "Apr", value: 400 },
-  { name: "May", value: 500 },
-  { name: "Jun", value: 350 },
-  { name: "Jul", value: 800 },
-]
 
 interface PredictionFormData {
   date: string;
